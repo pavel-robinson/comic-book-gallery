@@ -15,20 +15,5 @@
 
 <h4>Comic Books Available in This Series</h4>
 
-<div class="row">
-    @foreach (var comicBook in Model.Issues)
-    {
-        <div class="col-md-3">
-            <h4>
-                @Html.ActionLink(comicBook.DisplayText, "Detail","ComicBooks",
-               new { id = comicBook.Id },null)
-        </h4>
-        <a href="@Url.Action("Detail", "ComicBooks", new { id = comicBook.Id })">
-            <img src="/Images/@comicBook.CoverImageFileName"
-                 alt="@comicBook.DisplayText"
-                 class="img-responsive" />
-        </a>
-    </div>
-    }
-</div>
+@Html.Partial("_ComicBooksList", Model.Issues)
 
