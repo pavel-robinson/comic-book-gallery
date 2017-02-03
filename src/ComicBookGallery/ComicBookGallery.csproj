@@ -136,6 +136,7 @@
     <Compile Include="Controllers\ComicBooksController.cs" />
     <Compile Include="Data\ComicBookRepository.cs" />
     <Compile Include="Data\Data.cs" />
+    <Compile Include="Data\SeriesRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
